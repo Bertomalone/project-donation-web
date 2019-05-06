@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.header {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 992px) {
+  .header .navbar-expand-lg {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.header .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.header .nav-item {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.header .nav-link {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header .navbar-light .navbar-nav .nav-link:focus, .header .navbar-light .navbar-nav .nav-link:hover {
+  color: #376db7;
+}
+
+.header .btn-primary {
+  background-color: #376db7;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.header .btn {
+  padding: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
