@@ -1,0 +1,75 @@
+.detail-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
+    position: relative;
+    width: 100%;
+  
+    &::before {
+      background-color: rgba(0, 0, 0, 0.55);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  
+    &__wrapper {
+      align-items: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      position: relative;
+    }
+  
+    &__title {
+      font-size: 36px;
+      font-weight: 300;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    // with only duration text
+    &__duration {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+  
+      &--days {
+        font-size: 32px;
+        margin: 0;
+      }
+  
+      &--bar {
+        height: 1px;
+        margin: 10px 0;
+        width: 110px;
+      }
+  
+      &--date {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+  
+    // with only straight bar
+    &__straight-bar {
+      height: 1px;
+      margin-top: 25px;
+      width: 110px;
+    }
+  
+    // with only quantity division
+    &__capacity {
+      background-color: #fff;
+      bottom: 30px;
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 6px 20px;
+      position: absolute;
+      right: 0;
+    }
+}  

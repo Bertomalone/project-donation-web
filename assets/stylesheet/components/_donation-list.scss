@@ -1,0 +1,75 @@
+.donation-list {
+    padding-top: 88px;
+
+    &__title {
+        font-size: 25px;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    .card {
+        border: none;
+        color: black;
+        text-decoration: none;
+
+        &:hover .card-title {
+            color: #376db7 !important;
+        }
+
+        &:hover .card-img-top {
+            transform: scale(1.1);
+        }
+    }
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    
+    &__img-wrapper {
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        transition: all .3s ease-in-out;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        transition: all .3s ease-in-out;
+    }
+
+    .card-subtitle {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .card-text {
+        color: #376db7;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    &__link-wrapper {
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 28px;
+        padding: 6px 20px;
+    }
+
+    .btn-primary {
+        background-color: #376db7;
+        transition: all .3s ease-in-out;
+    }
+}

@@ -1,0 +1,52 @@
+.hm-banner {
+    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('../images/dummy/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .jumbotron {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .display-4 {
+        color: #fff;
+        font-size: 65px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__btn-wrapper {
+        margin-top: 26px;
+    }
+
+    .btn-primary {
+        background-color: #376db7;
+        margin-right: 20px;
+        transition: all .3s ease-in-out;
+    }
+
+    .btn {
+        font-size: 24px;
+        padding: 8px 18px;
+        border-radius: 8px;
+    }
+
+    .btn-outline-primary {
+        color: #fff;
+        border: 1.5px solid #fff;
+        border-color: #fff;
+        transition: all .3s ease-in-out;
+        padding: 8px 42px;
+
+        &:hover {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: unset;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.hm-article-list {
+    padding-top: 80px;
+    padding-bottom: 114px;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 16px 12px;
+    }
+
+    &__tags {
+        align-items: center;
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    &__tags-icon {
+        background-image: url('../images/icon/open-book.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        height: 12px;
+        margin-right: 8px;
+        width: 12px;
+    }
+
+    &__tags-name {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text {
+        margin-bottom: 22px;
+
+        @include excerpt($font-size: 14px,
+            $line-height: 1.6,
+            $lines-to-show: 4,
+            $excerpt-bg: #fff);
+
+        @media only screen and (max-width: 619px) {
+            @include excerpt(
+                $font-size: 12px,
+                $line-height: 1.5,
+                $lines-to-show: 4,
+                $excerpt-bg: #fff
+            );
+        }
+    }
+
+    .card-link {
+        font-size: 14px;
+        margin-left: 8px;
+        transition: all .3s ease-in-out; 
+    }
+}

@@ -1,0 +1,29 @@
+.cd-detail-description {
+    width: 70%;
+
+    &__text-box {
+        margin-right: 76px;
+
+        &:first-child {
+            border-bottom: 1px solid #000;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    &__address {
+        font-size: 20px;
+        line-height: 1.6;   
+    }
+}
